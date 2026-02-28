@@ -524,6 +524,10 @@ h1, h2, h3 {
     display: flex;
     gap: 0.5rem;
     margin-bottom: clamp(2rem, 4vw, 3rem);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    padding-bottom: 0.25rem;
 }
 
 .filter-btn {
@@ -619,10 +623,10 @@ h1, h2, h3 {
     font-style: italic;
     color: rgba(240, 234, 224, 0.7);
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
-.obras-quote cite {
+.obras-quote p cite {
     font-family: var(--font-body);
     font-size: 0.82rem;
     font-style: normal;
@@ -630,12 +634,25 @@ h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: var(--gold-light);
+    white-space: nowrap;
+    margin-left: 1em;
 }
 
 .obras-video {
     max-width: 600px;
     margin: clamp(2rem, 4vw, 4rem) auto 0;
     text-align: center;
+}
+
+.obras-en-venta {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold-light);
+    margin-top: 0.4rem;
+    margin-bottom: 0;
 }
 
 .obras-video video {
